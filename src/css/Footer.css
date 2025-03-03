@@ -1,0 +1,78 @@
+.Footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 226, 1) 61%);
+    z-index: 2;
+    position: relative;
+}
+
+.section-collection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-sec h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 2rem;
+    color: rgba(184, 29, 68, 1);
+}
+
+.footer-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+    width: 28%;
+    text-align: left;
+}
+
+.LogoImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid darkgray;
+}
+
+
+.footer-sec p {
+    margin: 8px;
+    color: rgb(8, 52, 108);
+}
+
+.footer-sec a {
+    text-decoration: none;
+}
+
+.footer-sec a:hover {
+    text-decoration: underline;
+    color: rgb(168, 13, 13);
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    background-color: #141318a6
+}
+
+@media (max-width: 768px) {
+    .section-collection {
+        flex-direction: column;
+    }
+
+    .footer-sec {
+        width: auto;
+    }
+}
+
+
+@media (max-width: 480px) {}

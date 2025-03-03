@@ -1,0 +1,1083 @@
+[
+    {
+        "id": 1,
+        "name": "Jane Smith",
+        "job_title": "Data Scientist",
+        "category": "Development",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Team Lead",
+        "image": "https://media.istockphoto.com/id/1391718981/photo/portrait-of-a-confident-young-businessman-standing-with-his-arms-crossed-in-an-office.jpg?s=612x612&w=0&k=20&c=eF_0QCtw-Y8Q2c4_xQe6KTkcSPiGCT6qBf6nuavE2Dg="
+    },
+    {
+        "id": 2,
+        "name": "John Doe",
+        "job_title": "Software Engineer",
+        "category": "Advertisement",
+        "availability": "Freelance",
+        "salary": 70,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 3,
+        "name": "John Doe",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Part-time",
+        "salary": 60,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 4,
+        "name": "Jane Smith",
+        "job_title": "Data Scientist",
+        "category": "Architecture",
+        "availability": "Full-time",
+        "salary": 50,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 5,
+        "name": "Emily Davis",
+        "job_title": "Web Developer",
+        "category": "Advertisement",
+        "availability": "Full-time",
+        "salary": 55,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 6,
+        "name": "Alice Johnson",
+        "job_title": "Project Manager",
+        "category": "Graphic Design",
+        "availability": "Freelance",
+        "salary": 55,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 7,
+        "name": "Jane Smith",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Part-time",
+        "salary": 80,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 8,
+        "name": "Emily Davis",
+        "job_title": "Web Developer",
+        "category": "Advertisement",
+        "availability": "On-site",
+        "salary": 70,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 9,
+        "name": "John Doe",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "On-site",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 10,
+        "name": "Jane Smith",
+        "job_title": "Data Scientist",
+        "category": "Development",
+        "availability": "On-site",
+        "salary": 80,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 11,
+        "name": "Alice Johnson",
+        "job_title": "Web Developer",
+        "category": "Advertisement",
+        "availability": "Full-time",
+        "salary": 50,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 12,
+        "name": "Emily Davis",
+        "job_title": "Data Scientist",
+        "category": "Architecture",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 13,
+        "name": "John Doe",
+        "job_title": "UI/UX Designer",
+        "category": "Illustration",
+        "availability": "On-site",
+        "salary": 60,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 14,
+        "name": "Alice Johnson",
+        "job_title": "Project Manager",
+        "category": "Development",
+        "availability": "Part-time",
+        "salary": 60,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 15,
+        "name": "Jane Smith",
+        "job_title": "Software Engineer",
+        "category": "Architecture",
+        "availability": "Remote",
+        "salary": 50,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 16,
+        "name": "John Doe",
+        "job_title": "Data Scientist",
+        "category": "Marketing",
+        "availability": "On-site",
+        "salary": 60,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 17,
+        "name": "Robert Brown",
+        "job_title": "Project Manager",
+        "category": "Graphic Design",
+        "availability": "On-site",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 18,
+        "name": "John Doe",
+        "job_title": "Web Developer",
+        "category": "Marketing",
+        "availability": "Full-time",
+        "salary": 50,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 19,
+        "name": "Emily Davis",
+        "job_title": "Web Developer",
+        "category": "Marketing",
+        "availability": "Part-time",
+        "salary": 80,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 20,
+        "name": "Emily Davis",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 21,
+        "name": "Robert Brown",
+        "job_title": "Web Developer",
+        "category": "Graphic Design",
+        "availability": "Full-time",
+        "salary": 50,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 22,
+        "name": "Jane Smith",
+        "job_title": "UI/UX Designer",
+        "category": "Architecture",
+        "availability": "Part-time",
+        "salary": 55,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 23,
+        "name": "Jane Smith",
+        "job_title": "UI/UX Designer",
+        "category": "Illustration",
+        "availability": "Freelance",
+        "salary": 55,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 24,
+        "name": "John Doe",
+        "job_title": "Project Manager",
+        "category": "Development",
+        "availability": "Remote",
+        "salary": 70,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 25,
+        "name": "Alice Johnson",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "Part-time",
+        "salary": 70,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 26,
+        "name": "John Doe",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Part-time",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 27,
+        "name": "Jane Smith",
+        "job_title": "UI/UX Designer",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 50,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 28,
+        "name": "Jane Smith",
+        "job_title": "Software Engineer",
+        "category": "Illustration",
+        "availability": "Freelance",
+        "salary": 70,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 29,
+        "name": "Emily Davis",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 60,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 30,
+        "name": "Alice Johnson",
+        "job_title": "UI/UX Designer",
+        "category": "Advertisement",
+        "availability": "Part-time",
+        "salary": 80,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 31,
+        "name": "Jane Smith",
+        "job_title": "Web Developer",
+        "category": "Graphic Design",
+        "availability": "Part-time",
+        "salary": 50,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 32,
+        "name": "Alice Johnson",
+        "job_title": "Software Engineer",
+        "category": "Architecture",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 33,
+        "name": "Emily Davis",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 50,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 34,
+        "name": "Jane Smith",
+        "job_title": "UI/UX Designer",
+        "category": "Illustration",
+        "availability": "Full-time",
+        "salary": 55,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 35,
+        "name": "John Doe",
+        "job_title": "Web Developer",
+        "category": "Illustration",
+        "availability": "Full-time",
+        "salary": 70,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 36,
+        "name": "Robert Brown",
+        "job_title": "Project Manager",
+        "category": "Illustration",
+        "availability": "On-site",
+        "salary": 80,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 37,
+        "name": "John Doe",
+        "job_title": "Web Developer",
+        "category": "Illustration",
+        "availability": "Part-time",
+        "salary": 50,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 38,
+        "name": "Emily Davis",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "On-site",
+        "salary": 55,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 39,
+        "name": "Jane Smith",
+        "job_title": "Software Engineer",
+        "category": "Development",
+        "availability": "Full-time",
+        "salary": 70,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 40,
+        "name": "John Doe",
+        "job_title": "Project Manager",
+        "category": "Development",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 41,
+        "name": "Robert Brown",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "On-site",
+        "salary": 50,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 42,
+        "name": "John Doe",
+        "job_title": "Web Developer",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 60,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 43,
+        "name": "Jane Smith",
+        "job_title": "UI/UX Designer",
+        "category": "Advertisement",
+        "availability": "On-site",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 44,
+        "name": "Alice Johnson",
+        "job_title": "Web Developer",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 50,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 45,
+        "name": "Robert Brown",
+        "job_title": "Project Manager",
+        "category": "Advertisement",
+        "availability": "Part-time",
+        "salary": 60,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 46,
+        "name": "John Doe",
+        "job_title": "UI/UX Designer",
+        "category": "Graphic Design",
+        "availability": "Full-time",
+        "salary": 50,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 47,
+        "name": "Alice Johnson",
+        "job_title": "Web Developer",
+        "category": "Illustration",
+        "availability": "Full-time",
+        "salary": 80,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 48,
+        "name": "Emily Davis",
+        "job_title": "Web Developer",
+        "category": "Illustration",
+        "availability": "On-site",
+        "salary": 80,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 49,
+        "name": "Emily Davis",
+        "job_title": "Software Engineer",
+        "category": "Advertisement",
+        "availability": "Full-time",
+        "salary": 70,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 50,
+        "name": "John Doe",
+        "job_title": "Web Developer",
+        "category": "Development",
+        "availability": "Freelance",
+        "salary": 55,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 51,
+        "name": "Jane Smith",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "Full-time",
+        "salary": 50,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 52,
+        "name": "Jane Smith",
+        "job_title": "Software Engineer",
+        "category": "Illustration",
+        "availability": "Remote",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 53,
+        "name": "Emily Davis",
+        "job_title": "Project Manager",
+        "category": "Advertisement",
+        "availability": "Freelance",
+        "salary": 50,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 54,
+        "name": "Alice Johnson",
+        "job_title": "Project Manager",
+        "category": "Advertisement",
+        "availability": "Remote",
+        "salary": 80,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 55,
+        "name": "Emily Davis",
+        "job_title": "Web Developer",
+        "category": "Advertisement",
+        "availability": "Part-time",
+        "salary": 60,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 56,
+        "name": "Alice Johnson",
+        "job_title": "UI/UX Designer",
+        "category": "Marketing",
+        "availability": "On-site",
+        "salary": 60,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 57,
+        "name": "Emily Davis",
+        "job_title": "Software Engineer",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 58,
+        "name": "John Doe",
+        "job_title": "Web Developer",
+        "category": "Graphic Design",
+        "availability": "Part-time",
+        "salary": 55,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 59,
+        "name": "Emily Davis",
+        "job_title": "Data Scientist",
+        "category": "Illustration",
+        "availability": "Part-time",
+        "salary": 70,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 60,
+        "name": "Jane Smith",
+        "job_title": "Data Scientist",
+        "category": "Graphic Design",
+        "availability": "Part-time",
+        "salary": 60,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 61,
+        "name": "Alice Johnson",
+        "job_title": "Software Engineer",
+        "category": "Marketing",
+        "availability": "On-site",
+        "salary": 50,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 62,
+        "name": "Emily Davis",
+        "job_title": "Data Scientist",
+        "category": "Architecture",
+        "availability": "Part-time",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 63,
+        "name": "Emily Davis",
+        "job_title": "Web Developer",
+        "category": "Graphic Design",
+        "availability": "Freelance",
+        "salary": 70,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 64,
+        "name": "Emily Davis",
+        "job_title": "Software Engineer",
+        "category": "Graphic Design",
+        "availability": "Full-time",
+        "salary": 50,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 65,
+        "name": "Emily Davis",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "Remote",
+        "salary": 50,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 66,
+        "name": "Alice Johnson",
+        "job_title": "Data Scientist",
+        "category": "Development",
+        "availability": "On-site",
+        "salary": 50,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 67,
+        "name": "Alice Johnson",
+        "job_title": "Data Scientist",
+        "category": "Architecture",
+        "availability": "Remote",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 68,
+        "name": "Jane Smith",
+        "job_title": "Web Developer",
+        "category": "Architecture",
+        "availability": "Freelance",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 69,
+        "name": "Robert Brown",
+        "job_title": "UI/UX Designer",
+        "category": "Development",
+        "availability": "Remote",
+        "salary": 80,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 70,
+        "name": "Jane Smith",
+        "job_title": "Web Developer",
+        "category": "Architecture",
+        "availability": "Freelance",
+        "salary": 60,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 71,
+        "name": "John Doe",
+        "job_title": "Software Engineer",
+        "category": "Marketing",
+        "availability": "Part-time",
+        "salary": 55,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 72,
+        "name": "Jane Smith",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Full-time",
+        "salary": 70,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 73,
+        "name": "Jane Smith",
+        "job_title": "Web Developer",
+        "category": "Advertisement",
+        "availability": "Part-time",
+        "salary": 50,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 74,
+        "name": "John Doe",
+        "job_title": "Data Scientist",
+        "category": "Development",
+        "availability": "Freelance",
+        "salary": 60,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 75,
+        "name": "John Doe",
+        "job_title": "Web Developer",
+        "category": "Illustration",
+        "availability": "Part-time",
+        "salary": 50,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 76,
+        "name": "Robert Brown",
+        "job_title": "Web Developer",
+        "category": "Illustration",
+        "availability": "Part-time",
+        "salary": 60,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 77,
+        "name": "John Doe",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 78,
+        "name": "Alice Johnson",
+        "job_title": "Data Scientist",
+        "category": "Illustration",
+        "availability": "Part-time",
+        "salary": 50,
+        "current_post": "Consultant"
+    },
+    {
+        "id": 79,
+        "name": "Alice Johnson",
+        "job_title": "Data Scientist",
+        "category": "Architecture",
+        "availability": "Freelance",
+        "salary": 60,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 80,
+        "name": "Emily Davis",
+        "job_title": "Web Developer",
+        "category": "Marketing",
+        "availability": "On-site",
+        "salary": 50,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 81,
+        "name": "Emily Davis",
+        "job_title": "UI/UX Designer",
+        "category": "Architecture",
+        "availability": "Freelance",
+        "salary": 70,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 82,
+        "name": "Alice Johnson",
+        "job_title": "Web Developer",
+        "category": "Architecture",
+        "availability": "Freelance",
+        "salary": 55,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 83,
+        "name": "Emily Davis",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "Freelance",
+        "salary": 50,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 84,
+        "name": "Robert Brown",
+        "job_title": "Data Scientist",
+        "category": "Marketing",
+        "availability": "Full-time",
+        "salary": 70,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 85,
+        "name": "Alice Johnson",
+        "job_title": "Data Scientist",
+        "category": "Development",
+        "availability": "Part-time",
+        "salary": 55,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 86,
+        "name": "Jane Smith",
+        "job_title": "Project Manager",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 80,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 87,
+        "name": "Jane Smith",
+        "job_title": "Project Manager",
+        "category": "Graphic Design",
+        "availability": "On-site",
+        "salary": 50,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 88,
+        "name": "Robert Brown",
+        "job_title": "Project Manager",
+        "category": "Advertisement",
+        "availability": "Freelance",
+        "salary": 50,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 89,
+        "name": "Emily Davis",
+        "job_title": "Software Engineer",
+        "category": "Advertisement",
+        "availability": "Full-time",
+        "salary": 55,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 90,
+        "name": "Robert Brown",
+        "job_title": "Software Engineer",
+        "category": "Advertisement",
+        "availability": "Full-time",
+        "salary": 60,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 91,
+        "name": "Jane Smith",
+        "job_title": "UI/UX Designer",
+        "category": "Advertisement",
+        "availability": "On-site",
+        "salary": 70,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 92,
+        "name": "Alice Johnson",
+        "job_title": "UI/UX Designer",
+        "category": "Illustration",
+        "availability": "Remote",
+        "salary": 50,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 93,
+        "name": "Robert Brown",
+        "job_title": "UI/UX Designer",
+        "category": "Marketing",
+        "availability": "Remote",
+        "salary": 50,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 94,
+        "name": "John Doe",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 95,
+        "name": "Robert Brown",
+        "job_title": "UI/UX Designer",
+        "category": "Architecture",
+        "availability": "Part-time",
+        "salary": 55,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 96,
+        "name": "Emily Davis",
+        "job_title": "Project Manager",
+        "category": "Illustration",
+        "availability": "Full-time",
+        "salary": 70,
+        "current_post": "Senior Developer"
+    },
+    {
+        "id": 97,
+        "name": "Jane Smith",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "Remote",
+        "salary": 55,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 98,
+        "name": "Jane Smith",
+        "job_title": "Data Scientist",
+        "category": "Advertisement",
+        "availability": "Remote",
+        "salary": 70,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 99,
+        "name": "Emily Davis",
+        "job_title": "UI/UX Designer",
+        "category": "Graphic Design",
+        "availability": "On-site",
+        "salary": 70,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 100,
+        "name": "Alice Johnson",
+        "job_title": "Project Manager",
+        "category": "Illustration",
+        "availability": "Freelance",
+        "salary": 55,
+        "current_post": "Junior Analyst"
+    },
+    {
+        "id": 101,
+        "name": "Rahul Sharma",
+        "job_title": "Creative Graphics Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 70,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 102,
+        "name": "Ananya Gupta",
+        "job_title": "Visual Design Specialist",
+        "category": "Graphics",
+        "availability": "Remote",
+        "salary": 75,
+        "current_post": "Senior Designer"
+    },
+    {
+        "id": 103,
+        "name": "Rajesh Patel",
+        "job_title": "UI/UX Graphics Designer",
+        "category": "Graphics",
+        "availability": "Hybrid",
+        "salary": 68,
+        "current_post": "Team Lead"
+    },
+    {
+        "id": 104,
+        "name": "Priya Verma",
+        "job_title": "Marketing Graphics Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 65,
+        "current_post": "Mid-Level Designer"
+    },
+    {
+        "id": 105,
+        "name": "Amit Kumar",
+        "job_title": "3D Graphics Designer",
+        "category": "Graphics",
+        "availability": "Remote",
+        "salary": 80,
+        "current_post": "Senior Designer"
+    },
+    {
+        "id": 106,
+        "name": "Sneha Reddy",
+        "job_title": "Brand Identity Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 72,
+        "current_post": "Junior Designer"
+    },
+    {
+        "id": 107,
+        "name": "Vikram Singh",
+        "job_title": "Motion Graphics Artist",
+        "category": "Graphics",
+        "availability": "Hybrid",
+        "salary": 78,
+        "current_post": "Senior Motion Designer"
+    },
+    {
+        "id": 108,
+        "name": "Meera Nair",
+        "job_title": "Packaging Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 67,
+        "current_post": "Mid-Level Designer"
+    },
+    {
+        "id": 109,
+        "name": "Arjun Chatterjee",
+        "job_title": "Infographics Designer",
+        "category": "Graphics",
+        "availability": "Remote",
+        "salary": 66,
+        "current_post": "Junior Designer"
+    },
+    {
+        "id": 110,
+        "name": "Kavya Menon",
+        "job_title": "Game Graphics Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 82,
+        "current_post": "Senior Designer"
+    },
+    {
+        "id": 111,
+        "name": "Rohit Deshmukh",
+        "job_title": "Advertising Graphics Designer",
+        "category": "Graphics",
+        "availability": "Hybrid",
+        "salary": 74,
+        "current_post": "Art Director"
+    },
+    {
+        "id": 112,
+        "name": "Pooja Joshi",
+        "job_title": "Product Graphics Designer",
+        "category": "Graphics",
+        "availability": "Remote",
+        "salary": 70,
+        "current_post": "Mid-Level Designer"
+    },
+    {
+        "id": 113,
+        "name": "Siddharth Malhotra",
+        "job_title": "Digital Graphics Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 77,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 114,
+        "name": "Ayesha Khan",
+        "job_title": "Corporate Graphics Designer",
+        "category": "Graphics",
+        "availability": "Hybrid",
+        "salary": 76,
+        "current_post": "Mid-Level Designer"
+    },
+    {
+        "id": 115,
+        "name": "Vikas Yadav",
+        "job_title": "Web Graphics Designer",
+        "category": "Graphics",
+        "availability": "Remote",
+        "salary": 69,
+        "current_post": "Junior Designer"
+    },
+    {
+        "id": 116,
+        "name": "Ishita Sengupta",
+        "job_title": "Editorial Graphics Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 64,
+        "current_post": "Mid-Level Designer"
+    },
+    {
+        "id": 117,
+        "name": "Manish Tiwari",
+        "job_title": "Mobile App Graphics Designer",
+        "category": "Graphics",
+        "availability": "Hybrid",
+        "salary": 71,
+        "current_post": "Lead Designer"
+    },
+    {
+        "id": 118,
+        "name": "Neha Bhatt",
+        "job_title": "Print Media Designer",
+        "category": "Graphics",
+        "availability": "Remote",
+        "salary": 73,
+        "current_post": "Senior Designer"
+    },
+    {
+        "id": 119,
+        "name": "Suresh Kannan",
+        "job_title": "Typography Designer",
+        "category": "Graphics",
+        "availability": "On-site",
+        "salary": 62,
+        "current_post": "Junior Designer"
+    },
+    {
+        "id": 120,
+        "name": "Divya Kapoor",
+        "job_title": "E-learning Graphics Designer",
+        "category": "Graphics",
+        "availability": "Remote",
+        "salary": 68,
+        "current_post": "Mid-Level Designer"
+    }
+]

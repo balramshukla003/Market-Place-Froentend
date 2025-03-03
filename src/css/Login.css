@@ -1,0 +1,200 @@
+#authentication-detail-box-img {
+    animation: slideInFromRight 1.5s ease-out;
+}
+
+#authentication-detail-box-form {
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+.authImage {
+    width: 100%;
+}
+
+.logoImg {
+    width: 80px;
+    cursor: pointer;
+}
+
+.registerform {
+    height: 90vh;
+}
+
+.authentication-inner {
+    height: 85vh;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 226, 1) 61%);
+}
+
+.authentication-detail-box {
+    margin: 0 2%;
+    border-radius: 10px;
+}
+
+.Heading {
+    display: flex;
+    align-items: center;
+}
+
+.authenticaton-form {
+    border: 5px solid rgb(172, 164, 164);
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.authenticaton-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left !important;
+}
+
+.authenticaton-form input {
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: #4768df;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #3b5998;
+}
+
+.radio-btns {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.divider {
+    text-align: center;
+    margin: 10px 0;
+    color: #777;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    transition: transform 0.5s ease;
+}
+
+.social-button:active {
+    scale: 0.95;
+}
+
+.social-button.google {
+    color: #db4437;
+    font-weight: bolder;
+}
+
+.social-button.facebook {
+    color: #3b5998;
+    font-weight: bolder;
+}
+
+.social-button.github {
+    color: #333;
+    font-weight: bolder;
+}
+
+.social-button:hover {
+    background: #f5f5f5;
+    font-weight: bolder;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#authentication-detail-box-img {
+    height: 70vh;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #authentication-detail-box-img {
+        display: none;
+    }
+
+    .authenticaton-form {
+        margin-top: 25%;
+        height: auto;
+    }
+
+    #authentication-detail-box-form {
+        animation: fade-in 1.5s ease;
+        animation: slideInFromLeft 1.5s ease-out;
+    }
+}

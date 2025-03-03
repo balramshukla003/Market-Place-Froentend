@@ -1,0 +1,178 @@
+.Image-box img {
+    width: 100%;
+    margin-top: 84px;
+    z-index: 500;
+}
+
+.Welcome-Text {
+    width: 46%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.welcome-div1 h1 {
+    font-size: 3.5rem;
+}
+
+.welcome-div1 h1,
+.welcome-div2 h4 {
+    color: rgb(49, 48, 48);
+    padding: 0px;
+    margin: 0px;
+}
+
+.welcome-div2 {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.welcome-div2 h4:hover {
+    color: rgb(187, 8, 68);
+}
+
+.Welcome-Text-Cont p {
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+.btn-box input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 7px;
+    transition: transform 0.3s ease;
+}
+
+#Btn:hover {
+    border: 1px solid #3e3e3e;
+}
+
+#Btn:active {
+    scale: 0.97;
+}
+
+#InputBox {
+    margin-right: 8px;
+    width: 270px;
+}
+
+.AdvanceSearch {
+    color: #767575;
+}
+
+.AdvanceSearch:hover {
+    color: rgb(90, 4, 32);
+}
+
+
+
+@media (max-width: 780px) {
+    .navbar {
+        border-bottom: 1px solid;
+    }
+
+    .Image-box img {
+        width: 100%;
+        margin-top: 68px;
+    }
+
+    .Welcome-Text {
+        width: 53%;
+        position: absolute;
+        top: 11%;
+        left: 6%;
+    }
+
+    .welcome-div1 h1 {
+        font-size: 18px;
+    }
+
+    .welcome-div2 h4 {
+        font-size: 14px;
+    }
+
+    .btn-box {
+        line-height: 0;
+    }
+
+    .Welcome-Text-Cont p {
+        font-size: 10px;
+    }
+
+    .btn-box input {
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        font-size: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    #InputBox {
+        margin-right: 5px;
+        width: 180px;
+    }
+
+    .AdvanceSearch {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .Image-box img {
+        margin-top: 72px;
+    }
+
+    .Welcome-Text {
+        width: 52%;
+        position: absolute;
+        left: 6%;
+        top: 12%;
+    }
+
+    .welcome-div1 h1 {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .welcome-div2 h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .btn-box {
+        line-height: 0;
+    }
+
+    .Welcome-Text-Cont p {
+        font-size: 6px;
+    }
+
+    .btn-box input {
+        border-radius: 3px;
+        border: none;
+        padding: 3px;
+        font-size: 6px;
+        border: 1px solid #ccc;
+        transition: transform 0.3s ease;
+        margin-bottom: 3px;
+    }
+
+    #InputBox {
+        margin-right: 2px;
+        width: 120px;
+    }
+
+    .AdvanceSearch {
+        font-size: 6px;
+    }
+}

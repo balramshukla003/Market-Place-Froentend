@@ -1,0 +1,84 @@
+.recruiter-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1;
+    top: 0;
+}
+
+.nav-logo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.nav-logo h1 {
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+    color: #ecf0f1;
+}
+
+
+/* Hamburger Menu Icon - hidden on larger screens */
+.nav-menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Navigation Links (Desktop) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+
+    /* Show hamburger icon */
+    .nav-menu-icon {
+        display: block;
+    }
+
+    /* Stack navigation links vertically and hide by default */
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Adjust based on navbar height */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    /* When menu is open, allow links to be visible */
+    .nav-links.open {
+        max-height: 300px;
+        /* Adjust height as needed */
+    }
+
+    .nav-links li {
+        padding: 10px 20px;
+        border-top: 1px solid #444;
+    }
+}

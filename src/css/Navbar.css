@@ -1,0 +1,188 @@
+html ::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 226, 1) 61%);
+    border-bottom: 2px solid #333;
+    margin-bottom: 84px;
+}
+
+.upper-navbar {
+    padding: 15px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 150px;
+    width: 100%;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-title h2 {
+    color: rgba(184, 29, 68, 1);
+    font-weight: 600;
+}
+
+.nav-title img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid darkgray;
+}
+
+.nav-title img:active {
+    scale: 0.98;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links a:hover {
+    color: rgb(205, 28, 87);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.LoginNav:active {
+    scale: 0.98;
+}
+
+.responsiveMenu {
+    position: absolute;
+    right: 0;
+    background: rgb(203, 203, 237);
+    width: 100%;
+    z-index: 1000;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.responsiveMenu ul li {
+    list-style: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.responsiveMenu ul li a {
+    width: 100%;
+    text-decoration: none;
+    padding: 5px;
+    color: #333;
+}
+
+.responsiveMenu ul li a:hover {
+    text-decoration: underline;
+}
+
+.drop-down {
+
+    right: 10px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgb(242, 234, 234);
+    width: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    top: 100%;
+}
+
+.Drop-Section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: #9f9f9f;
+    height: 190px;
+    margin: 0 10px;
+}
+
+.Drop-Section h4 {
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.Drop-Section a {
+    text-decoration: none;
+    color: #333;
+    line-height: 1.7;
+}
+
+.Drop-Section a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.drop-link:hover {
+    border-bottom: 3px solid;
+}
+
+
+
+@media (max-width: 768px) {
+    .upper-navbar {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-title img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .drop-down {
+        display: none;
+    }
+}

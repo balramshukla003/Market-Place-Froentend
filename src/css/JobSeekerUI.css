@@ -1,0 +1,236 @@
+/* Job Seeker Navbar */
+
+.jobSeeker-Nav {
+    width: 100%;
+    max-width: -webkit-fill-available;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.nav-part {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.jobber-logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 15px;
+    cursor: pointer;
+}
+
+.jobber-logo-container h1 {
+    color: #1a396b;
+    font-family: 'ADLaM Display', sans-serif;
+    font-weight: 100;
+    font-size: 1.9rem;
+    padding: 0;
+    margin: 0;
+}
+
+.jobber-logo-container img {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #1a396b;
+    border-radius: 50%;
+}
+
+.jobber-detail {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    gap: 15px;
+    background-color: #fff;
+    border: 2px solid #ebf0f5;
+    border-radius: 8px;
+    position: relative;
+    min-width: 140px;
+    transition: .1s;
+}
+
+.jobber-detail:hover {
+    background-color: #f6f7f8;
+}
+
+.jobber-detail h4 {
+    margin: 0;
+}
+
+.main-cont-job {
+    width: 60%;
+}
+
+#jobber-detail {
+    display: none;
+}
+
+.toggledMenu {
+    position: absolute;
+    right: 10px;
+    top: 84px;
+    min-width: 180px;
+    border-radius: 5px;
+    border: 2px solid #ebf0f5;
+    padding: 10px;
+    background-color: rgb(31 47 72);
+    color: #ffffff;
+    line-height: 2;
+}
+
+.usersett {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-part svg {
+    cursor: pointer;
+}
+
+.toggledMenu p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggledMenu p:hover {
+    color: darkblue;
+    background-color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/* job_Seeker Ui */
+
+.dashboard-container-jobber {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.right-nav-bar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+    position: fixed;
+}
+
+.fltr-btns {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px 0 0;
+    gap: 10%;
+}
+
+.clrbtn {
+    border: 1px solid white;
+    font-size: medium;
+    background-color: white;
+    border-radius: 2px;
+    padding: 2px 15px;
+    color: red;
+}
+
+.clrbtn:hover,
+.aplybtn:hover {
+    background-color: #edebeb;
+}
+
+.aplybtn {
+    border: 1px solid gray;
+    font-size: medium;
+    background-color: white;
+    border-radius: 2px;
+    padding: 2px 15px;
+    color: green;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Job Seeker Navbar */
+
+    .jobSeeker-Nav {
+        padding: 15px;
+    }
+
+    .jobber-logo-container {
+        gap: 10px;
+    }
+
+    .jobber-logo-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .jobber-logo-container h1 {
+        font-size: medium;
+    }
+
+    #userPart {
+        display: none;
+    }
+
+    #jobber-detail {
+        background-color: rgb(31 47 72);
+        color: #ffffff;
+        display: flex;
+        border: navajowhite;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .toggledMenu {
+        top: 70px;
+        right: 8px;
+    }
+
+    /* Job Seeker Ui */
+    .dashboard-container-jobber {
+        margin-top: 10%;
+    }
+
+    .right-nav-bar {
+        display: none;
+    }
+
+    .main-cont-job {
+        width: auto;
+        margin: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* Job Seeker Ui */
+    .dashboard-container-jobber {
+        margin-top: 15%;
+    }
+
+}

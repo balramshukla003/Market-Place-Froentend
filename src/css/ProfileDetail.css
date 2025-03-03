@@ -1,0 +1,126 @@
+.profile-right-side {
+    background-color: rgb(248 246 246);
+    width: 70%;
+    border-left: 1px solid #ccc;
+}
+
+.profile-right-side .profile-detail {
+    padding: 5% 15%;
+    border-radius: 10px;
+}
+
+
+.profile-right-side .profile-detail .profile-section .section-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 25px 0;
+}
+
+.profile-right-side .profile-detail .profile-section .section-head h4 {
+    margin: 0;
+}
+
+.profile-right-side .profile-detail .profile-section .section-head button {
+    padding: 2px 10px;
+    border: none;
+    font-size: medium;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.profile-right-side .profile-detail .profile-section .section-head button:hover {
+    color: rgb(151, 7, 7);
+}
+
+.Type p {
+    padding: 0 10px 0 0;
+}
+
+.type-data {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-detail .profile-section .type-data ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    padding: 0px;
+}
+
+.profile-detail .profile-section .type-data ul li {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f3f3f3cb;
+    border: 1px solid #ddddddba;
+    border-radius: 5px;
+    width: 150px;
+    overflow: scroll;
+}
+
+.profile-out {
+    animation: slideDown 0.5s ease-in-out;
+    display: none;
+    position: relative;
+    padding: 20px;
+
+    border-radius: 10px;
+    margin: 10px 0;
+
+    color: #7e7e7e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .profile-right-side {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .type-data {
+        width: auto;
+    }
+
+    .Type p {
+        padding: 0 5px;
+    }
+
+    .profile-detail .profile-section .type-data ul {
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjust to 3 columns for tablets */
+    }
+
+    .profile-section0 .profile-detail {
+        padding: 0px;
+    }
+
+    .profile-right-side .profile-detail {
+        padding: 25px;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    .profile-right-side .profile-detail .profile-section .section-head {
+        width: 100%;
+    }
+}

@@ -1,0 +1,333 @@
+.landing2-outer {
+    padding: 5%;
+}
+
+.Discover-job {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(228, 160, 248, 0.4);
+    background: linear-gradient(98deg, rgb(214 214 214 / 28%) 23%, rgb(197 210 219 / 49%) 100%);
+}
+
+.Job-Seeker-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    background: linear-gradient(98deg, rgb(214 214 214 / 28%) 23%, rgb(197 210 219 / 49%) 100%);
+}
+
+
+.jobseeker-img {
+    width: 50%;
+}
+
+.Job-Seeker-box h3 {
+    padding: 0px;
+    margin: 0;
+    font-size: xxx-large;
+    font-family: 'Architects Daughter', sans-serif;
+}
+
+.Job-Seeker-box p {
+    font-size: larger;
+    padding: 0 10%;
+}
+
+.Job-Seeker-box button {
+    font-size: larger;
+    padding: 8px 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    transition: transform 0.5s ease-out;
+}
+
+.Job-Seeker-box button:hover {
+    background: #4c86af;
+    color: white;
+    scale: 1.05;
+}
+
+.landing2-inner {
+    display: flex;
+    justify-content: center;
+    margin: 5% 10%;
+    width: 75%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.category {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category .job-cate-section {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px 20px;
+}
+
+.category .job-cate-section:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.category .job-cate-section p {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+
+.landing3-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Box-l3 {
+    padding: 20px;
+}
+
+.Box-l3 h1 {
+    font-size: 4rem;
+    font-family: 'Architects Daughter';
+    color: #040442;
+}
+
+.Box-l3 h4 {
+    font-family: cursive;
+    color: #4b4be1;
+    line-height: 1.5;
+}
+
+.Box-l3 button {
+    padding: 10px 30px;
+    font-size: larger;
+    border-radius: 10px;
+    border: navajowhite;
+    background-color: #ccc;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+.Box-l3 button:hover {
+    color: rgb(123, 130, 4);
+    background-color: #cdc7c7;
+}
+
+.Box-l3 button:active {
+    scale: 0.98;
+}
+
+.box-sections {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-sections section {
+    cursor: pointer;
+    margin: 20px;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box-sections section:hover {
+    background-color: #e3e7ea;
+}
+
+.box-sections section:active {
+    scale: 0.99;
+}
+
+.sec-img {
+    width: 150px;
+    padding: 10px;
+}
+
+.landing2-course {
+    margin: 80px 0 20px 0;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 50px 0;
+    border: 1px solid #ccc;
+}
+
+.course-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.course-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.course-text p {
+    margin-top: 0;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+.card-section {
+    width: 100%;
+}
+
+.course-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards-text {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-text button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: medium;
+    border: transparent;
+    transition: transform 0.1s ease;
+}
+
+.cards-text button:hover {
+    background-color: #4c86af;
+    color: white;
+    transform: scale(1.05);
+}
+
+.cards-text button:active {
+    scale: 0.95;
+}
+
+@media (max-width: 768px) {
+    .Job-Seeker-box h3 {
+        font-size: medium;
+    }
+
+    .Job-Seeker-box p {
+        font-size: 10px;
+    }
+
+    .Job-Seeker-box button {
+        font-size: x-small;
+        margin: 2px;
+    }
+
+    .jobseeker-img {
+        width: 100%;
+    }
+
+    .landing3-inner {
+        display: inline;
+    }
+
+    .box-sections {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-sections section {
+        margin: 0;
+        width: auto;
+    }
+
+    .cards-text p {
+        font-size: small;
+    }
+
+    .course-cards {
+        padding: 20px
+    }
+
+    .cards-text button {
+        font-size: x-small;
+        margin: 2px;
+        padding: 1px 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing2-outer {
+        padding: 0;
+    }
+
+    .Discover-job {
+        margin-top: 5%;
+    }
+
+    .Job-Seeker-box h3 {
+        font-size: x-small;
+    }
+
+    .Job-Seeker-box p {
+        font-size: 7px;
+    }
+
+    .Job-Seeker-box button {
+        font-size: xx-small;
+        margin: 2px;
+        padding: 1px 3px;
+    }
+
+    .jobseeker-img {
+        width: 100%;
+    }
+
+    .category {
+        padding: 0;
+        padding-top: 5%;
+    }
+
+    .category .job-cate-section {
+        padding: 0px;
+        font-size: x-small;
+        width: 80px;
+    }
+
+    .Box-l3 h1 {
+        font-size: 3rem;
+    }
+
+    .course-text h1 {
+        font-size: xx-large;
+    }
+    .course-cards-container{
+        padding: 20px;
+        gap: 5px;
+    }
+    .course-cards{
+        padding: 0%;
+    }
+
+}

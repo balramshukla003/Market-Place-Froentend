@@ -17,15 +17,16 @@ const AuthProvider = ({ children }) => {
     const token = localStorage.getItem("jwt_token");
 
     async function callProtectedEndpoint() {
-        const url = "http://localhost:5000/protected"; // Replace with your API endpoint
 
         if (!token) {
+            console.log("No token")
             return;
         }
-
+        const backendURl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000"
         setLoading(true);
+
         try {
-            const response = await fetch(url, {
+            const response = await fetch(`${backendURl}/protected`, {
                 method: "POST", // Adjust the method as needed (GET, PUT, etc.)
                 headers: {
                     "alg": "HS256",
@@ -44,10 +45,10 @@ const AuthProvider = ({ children }) => {
                 const { name = "Guest", email = "unknown", type = "unknown" } = result.data;
                 setUser({ name, email, type });
             } else {
-                throw new Error("Invalid response structure");
+                console.log(result.message);
             }
         } catch (error) {
-            console.error("Error calling protected endpoint:", error.message);
+            console.error("Error calling protected endpoint:", error);
         } finally {
             setLoading(false);
         }

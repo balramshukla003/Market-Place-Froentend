@@ -10,7 +10,7 @@ import infsAImg from '../assets/Landing 2 Image/infs.png';
 import gImg from '../assets/Landing 2 Image/google.jpg';
 import utuImg from '../assets/Landing 2 Image/utube.png';
 
-import webDev from '../assets/Landing 2 Image/webdev.png';
+import webDev from '../assets/Landing 2 Image/webDev.png';
 import python from '../assets/Landing 2 Image/python.png';
 import java from '../assets/Landing 2 Image/Java.png';
 import react from '../assets/Landing 2 Image/React.png';

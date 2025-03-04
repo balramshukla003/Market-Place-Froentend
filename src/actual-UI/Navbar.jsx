@@ -62,7 +62,7 @@ const Navbar = () => {
     };
 
     const useLinkClickHandler = () => {
-         (false);
+        setdropDown(false)
     }
 
     const toggleMenu = () => {

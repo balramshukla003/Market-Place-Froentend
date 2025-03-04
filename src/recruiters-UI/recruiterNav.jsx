@@ -13,7 +13,7 @@ export default function RecruiterNav() {
 
     const handleNavigation = (path) => {
         navigate(path);
-        setIsMenuOpen(false); // Close menu after navigation
+        setIsMenuOpen(false);
     };
 
     return (
@@ -28,12 +28,12 @@ export default function RecruiterNav() {
             </div>
 
             <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-                <h4 style={{ margin: "0px" }}> <icons.job />  Post Job</h4>
-                <h4 style={{ margin: "0px" }} onClick={() => {
+                <h4 style={{ margin: "0px", cursor: "pointer" }}> <icons.job />  Post Job</h4>
+                <h4 style={{ margin: "0px", cursor: "pointer" }} onClick={() => {
                     setUserLoggedIn(false);
                     localStorage.removeItem('jwt_token');
                     navigate('/');
-                }}> <icons.logout />  logout</h4>
+                }}> <icons.logout /> logout</h4>
             </ul>
         </nav>
     );

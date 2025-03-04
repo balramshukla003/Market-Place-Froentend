@@ -140,7 +140,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <button className="hamburger" onClick={toggleMenu}>
+                <button className="hamburger" onClick={toggleMenu} style={{ color: "black" }}>
                     <span className="line"></span>
                     <span className="line"></span>
                     <span className="line"></span>

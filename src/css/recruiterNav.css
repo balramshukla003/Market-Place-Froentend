@@ -57,24 +57,40 @@
         display: block;
     }
 
-    /* Stack navigation links vertically and hide by default */
+    .nav-logo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-logo img {
+        width: 30px;
+    }
+
+    .nav-logo h1 {
+        font-size: 1.5rem;
+    }
+
     .nav-links {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        /* Adjust based on navbar height */
-        left: 0;
-        width: 100%;
-        background-color: #333;
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.3s ease-in-out;
     }
 
-    /* When menu is open, allow links to be visible */
     .nav-links.open {
         max-height: 300px;
-        /* Adjust height as needed */
+        width: 100%;
+        background-color: #ccc;
+        border-bottom: 1px solid;
+        color: #333;
+        align-items: end;
+        gap: 10px;
+        right: 0;
+        padding: 20px 20px 20px 0;
+        margin: 5px 4px;
     }
 
     .nav-links li {

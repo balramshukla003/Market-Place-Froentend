@@ -111,9 +111,6 @@
     background-color: white;
 }
 
-.hamburger {
-    display: none;
-}
 
 
 /* job_Seeker Ui */
@@ -200,9 +197,6 @@
         gap: 10px;
     }
 
-    .hamburger {
-        display: block;
-    }
 
     .toggledMenu {
         top: 70px;

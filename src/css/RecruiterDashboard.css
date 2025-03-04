@@ -328,6 +328,12 @@ body {
         border-width: 8px;
     }
 
+    .filter-select,
+    .search-input {
+        width: auto;
+        font-size: small;
+    }
+
     .main-content {
         margin-top: 40px;
         padding: 40px 15px;

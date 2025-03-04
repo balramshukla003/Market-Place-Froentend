@@ -113,7 +113,6 @@ html ::-webkit-scrollbar {
 }
 
 .drop-down {
-
     right: 10px;
     z-index: 2;
     position: absolute;

@@ -1,11 +1,15 @@
 import '../css/recruiterNav.css';
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ImageLogo from '../assets/logo.png';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
+import icons from '../actual-UI/Icons';
+import { AuthContext } from '../context/AuthProvider';
+
 
 export default function RecruiterNav() {
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { setUserLoggedIn } = useContext(AuthContext)
 
     const handleNavigation = (path) => {
         navigate(path);
@@ -24,6 +28,12 @@ export default function RecruiterNav() {
             </div>
 
             <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+                <h4 style={{ margin: "0px" }}> <icons.job />  Post Job</h4>
+                <h4 style={{ margin: "0px" }} onClick={() => {
+                    setUserLoggedIn(false);
+                    localStorage.removeItem('jwt_token');
+                    navigate('/');
+                }}> <icons.logout />  logout</h4>
             </ul>
         </nav>
     );

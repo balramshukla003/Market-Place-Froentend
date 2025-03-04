@@ -1,13 +1,21 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import '../css/UserProfile.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ProfileDetail from '../jobbers-UI/ProfileDetail';
 import profile from '../assets/jobBg.jpg'
 import { AuthContext } from '../context/AuthProvider';
 
 const UserProfile = () => {
 
-  const { authUser } = useContext(AuthContext);
+  const { authUser, userLoggedIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (userLoggedIn === false) {
+      navigate('/login')
+    }
+  })
+
 
   const [activeLink, setActiveLink] = useState('basic');
 

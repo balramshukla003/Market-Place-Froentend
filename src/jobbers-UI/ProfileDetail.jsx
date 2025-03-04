@@ -3,9 +3,12 @@ import '../css/ProfileDetail.css'
 import { AuthContext } from '../context/AuthProvider';
 import Icons from '../actual-UI/Icons.jsx'
 import EditDetails from '../jobbers-UI/EditDetails.jsx'
+import { useNavigate } from 'react-router-dom';
 
 const ProfileDetail = (props) => {
-    const { authUser } = useContext(AuthContext);
+
+    const { authUser, userLoggedIn } = useContext(AuthContext);
+  
     const [visible, setVisisble] = useState(false);
 
     const EditProfile = () => {

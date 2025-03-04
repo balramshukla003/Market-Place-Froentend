@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Icons from "./Icons.jsx";
 import "../css/FilteredJobs.css";
+import Loader from '../actual-UI/Loader.jsx'
 
 const FilteredJobs = () => {
     const [jobs, setJobs] = useState([]);
@@ -41,7 +42,7 @@ const FilteredJobs = () => {
             <div className="right-sidebar-outer" key={jobs.id}>
                 {loading && (
                     <div className="messageArea">
-                        <p className="loading-message">Loading jobs...</p>
+                        <h4 style={{ color: "red" }}>Loading jobs.....</h4>
                     </div>
                 )}
                 {error && (

@@ -1,3 +1,4 @@
+import Loader from '../actual-UI/Loader.jsx';
 import React, { createContext, useEffect, useState } from 'react';
 
 const AuthContext = createContext();
@@ -59,7 +60,7 @@ const AuthProvider = ({ children }) => {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return <Loader />
     }
 
     return (

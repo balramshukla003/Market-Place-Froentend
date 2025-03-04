@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import '../css/JobSeekerUi.css';
+import '../css/JobSeekerUI.css';
 import icons from '../actual-UI/Icons';
 import PrivacyPolicy from '../actual-UI/PrivacyPolicy';
 import { AuthContext } from '../context/AuthProvider';

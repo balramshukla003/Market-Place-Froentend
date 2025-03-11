@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import '../css/RecruiterDashboard.css';
 import icons from '../actual-UI/Icons';
 import PostJobUi from './PostJobUi';
@@ -10,9 +10,21 @@ import EmployeeData from '../api/employeData.json';
 import IMage from '../assets/image1.png';
 import IMage2 from '../assets/images.jpg';
 
+import { ActiveContext } from '../context/ActiveProvider';
+
 const RecruiterDashboard = () => {
+    const contentRef = useRef(null);
+
+    const { active, setActive } = useContext(ActiveContext)
+
+    useEffect(() => {
+        console.log('RecruiterDashboard :', active)
+        setActiveTab(active)
+    }, [active])
+
     const Navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState('explore');
+    const [activeTab, setActiveTab] = useState("explore");
+    console.log("ative tab: ", activeTab)
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -37,6 +49,10 @@ const RecruiterDashboard = () => {
         console.log("Form Data Submitted: ", formData);
         alert("Form submitted successfully!");
     };
+
+    useEffect(() => {
+        contentRef.current?.scrollTo(0, 0);
+    }, [activeTab]);
 
     return (
         <div className="dashboard-container">
@@ -95,7 +111,7 @@ const RecruiterDashboard = () => {
                 </nav>
             </div>
 
-            <div className="main-content">
+            <div className="main-content" ref={contentRef}>
                 {activeTab === 'explore' && (
                     <div className="jobbers-section">
                         <div className="search-filter">

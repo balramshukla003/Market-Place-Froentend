@@ -348,4 +348,9 @@ body {
         margin-top: 50px;
         border-width: 6px;
     }
+
+    .main-content {
+        margin-top: 70px;
+        padding: 0;
+    }
 }

@@ -5,7 +5,11 @@ import PrivacyPolicy from '../actual-UI/PrivacyPolicy';
 import { AuthContext } from '../context/AuthProvider';
 import { useNavigate } from 'react-router-dom';
 import FilteredJobs from '../actual-UI/FilteredJobs';
+import { FilterContext } from "../context/FilterProvider.jsx";
+
 const JobSeekerUi = (props) => {
+
+    const { filter, setFilter } = useContext(FilterContext)
 
     const { authUser, setAuthUser, userLoggedIn, setUserLoggedIn } = useContext(AuthContext)
     const [activeTab, setActiveTab] = useState('all');
@@ -91,12 +95,16 @@ const JobSeekerUi = (props) => {
                             <nav className="nav-menu">
                                 <h4>Apply Filter</h4>
 
-                                <div className='radio-btns'>
-                                    <label htmlFor="option1">
-                                        <input type="radio" id="recruiter" name="choice" value="in-office" onChange={(e) => { setJobType(e.target.value); }} /> In-Office
-                                    </label>
+                                <div className='radio-btn'>
+
                                     <label htmlFor="option2">
-                                        <input type="radio" id="job-seeker" name="choice" value="remote" onChange={(e) => { setJobType(e.target.value); }} /> Remote
+                                        <input type="radio" id="job-seeker" name="choice" value="On-site" onChange={(e) => { setJobType(e.target.value); }} /> On-Site
+                                    </label>
+                                    <label htmlFor="option3">
+                                        <input type="radio" id="job-seeker" name="choice" value="Remote" onChange={(e) => { setJobType(e.target.value); }} /> WFH
+                                    </label>
+                                    <label htmlFor="option4">
+                                        <input type="radio" id="job-seeker" name="choice" value="Hybrid" onChange={(e) => { setJobType(e.target.value); }} /> Hybrid
                                     </label>
                                 </div>
                                 <div className='ex-drop-down'>
@@ -126,6 +134,7 @@ const JobSeekerUi = (props) => {
                                         className="aplybtn"
                                         onClick={() => {
                                             alert(`Type: ${jobType}, Experience: ${experience}`);
+                                            setFilter({ workMode: jobType });
                                         }}
                                     >
                                         Apply

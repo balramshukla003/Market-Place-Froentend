@@ -114,6 +114,11 @@
 
 
 /* job_Seeker Ui */
+.radio-btn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
 
 .dashboard-container-jobber {
     margin-top: 5%;
@@ -162,6 +167,9 @@
     color: green;
 }
 
+.hamburger {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -206,6 +214,7 @@
     /* Job Seeker Ui */
     .dashboard-container-jobber {
         margin-top: 10%;
+        padding: 10px;
     }
 
     .right-nav-bar {
@@ -217,6 +226,9 @@
         margin: 0;
     }
 
+    .hamburger {
+        display: flex;
+    }
 }
 
 

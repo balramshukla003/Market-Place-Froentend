@@ -18,17 +18,16 @@ const AuthProvider = ({ children }) => {
     const token = localStorage.getItem("jwt_token");
 
     async function callProtectedEndpoint() {
-
         if (!token) {
-            console.log("No token")
+            console.log("No token");
             return;
         }
-        const backendURl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000"
+        const backendURL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
         setLoading(true);
 
         try {
-            const response = await fetch(`${backendURl}/protected`, {
-                method: "POST", // Adjust the method as needed (GET, PUT, etc.)
+            const response = await fetch(`${backendURL}/protected`, {
+                method: "POST",
                 headers: {
                     "alg": "HS256",
                     "typ": "JWT",
@@ -60,7 +59,7 @@ const AuthProvider = ({ children }) => {
     }, []);
 
     if (loading) {
-        return <Loader />
+        return <Loader />;
     }
 
     return (

@@ -40,15 +40,19 @@ export default function Jobber_Navbar() {
         };
     }, []);
 
-    const handleLogoClick = (path = '/') => {
+    const handleLogoClick = (path) => {
         navigate(path);
         setIsOpen(false);
     };
 
     const toggleMenu = () => {
-        setIsUp(!isUp);
-        setIsOpen(!isOpen);
-    };
+        if (isUp === false && isOpen === false) {
+            setIsUp(true);
+            setIsOpen(true);
+        } else {
+            closeWindow();
+        }
+    }
 
     const handleLogout = () => {
         setUserLoggedIn(false);
@@ -90,11 +94,11 @@ export default function Jobber_Navbar() {
             </div>
 
             <button onClick={toggleMenu} className="hamburger">
-                {isOpen ? '✖' : '☰'}
+                {isUp ? '✖' : '☰'}
             </button>
 
             {isUp && (
-                <div className="toggledMenu" ref={windowRef}>
+                <div className="toggledMenu">
                     <div className="jobber-detail" id="jobber-detail" onClick={() => handleLogoClick('/')}>
                         <img
                             src={ImageLogo}

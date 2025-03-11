@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Icons from "./Icons.jsx";
 import "../css/FilteredJobs.css";
-import Loader from '../actual-UI/Loader.jsx'
+
+import { FilterContext } from "../context/FilterProvider.jsx";
 
 const FilteredJobs = () => {
+
+    const { filter, setFilter } = useContext(FilterContext)
+
     const [jobs, setJobs] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
@@ -14,9 +18,13 @@ const FilteredJobs = () => {
         setError("");
         const backendURl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
         try {
-            const response = await fetch(`${backendURl}/fetchjobs`, {   //https://market-place-backend-vv9b.onrender.com
+            const response = await fetch(`${backendURl}/fetchjobs`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    query: filter, 
+                }),
+
             });
 
             const data = await response.json();
@@ -35,7 +43,7 @@ const FilteredJobs = () => {
 
     useEffect(() => {
         fetchJobs();
-    }, []);
+    }, [filter]);
 
     return (
         <>
@@ -59,8 +67,8 @@ const FilteredJobs = () => {
                     <div className="right-sidebar" id={index} key={index}>
                         <div className="job-description-box">
                             <div className="job-company-name">
-                                <h3>
-                                    {job.jobProfile} -<span>{job.jobType}</span>
+                                <h3 style={{ textDecoration: "underline" }}>
+                                    {job.jobProfile}
                                 </h3>
                                 <h4>
                                     {job.companyName} &nbsp;
@@ -99,7 +107,7 @@ const FilteredJobs = () => {
                                     <Icons.education /> {job.education}
                                 </p>
                             </div>
-                            <div>
+                            <div id="skillset">
                                 <p>
                                     <Icons.skill />
                                     {job.skills?.map((skill, index) => (

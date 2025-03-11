@@ -44,20 +44,20 @@ html ::-webkit-scrollbar {
     scale: 0.98;
 }
 
-.nav-links {
+.nav-links-nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
 
-.nav-links a {
+.nav-links-nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #333;
 }
 
-.nav-links a:hover {
+.nav-links-nav a:hover {
     color: rgb(205, 28, 87);
 }
 
@@ -82,34 +82,8 @@ html ::-webkit-scrollbar {
     scale: 0.98;
 }
 
-.responsiveMenu {
-    position: absolute;
-    right: 0;
-    background: rgb(203, 203, 237);
-    width: 100%;
-    z-index: 1000;
-    padding: 0px 15px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    animation: slideDown 0.5s ease-in-out;
-}
-
-.responsiveMenu ul li {
-    list-style: none;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.responsiveMenu ul li a {
-    width: 100%;
-    text-decoration: none;
-    padding: 5px;
-    color: #333;
-}
-
-.responsiveMenu ul li a:hover {
-    text-decoration: underline;
+#Responsive {
+    display: none;
 }
 
 .drop-down {
@@ -162,17 +136,21 @@ html ::-webkit-scrollbar {
 
 
 @media (max-width: 768px) {
+    #Responsive {
+        display: flex;
+    }
+
     .upper-navbar {
         justify-content: space-between;
-        width: 100%;
-        padding: 0 10px;
+        padding: 0 20px;
+        gap: 0;
     }
 
     .hamburger {
         display: flex;
     }
 
-    .nav-links {
+    .nav-links-nav {
         display: none;
     }
 
@@ -183,5 +161,11 @@ html ::-webkit-scrollbar {
 
     .drop-down {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-title h2 {
+        margin: 15px 0;
     }
 }

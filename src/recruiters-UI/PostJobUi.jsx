@@ -197,9 +197,9 @@ const PostJobUi = () => {
                         <h3>Additional Details</h3>
                         <div className="form-grid">
                             <div className="form-section">
-                                <label htmlFor="salary">Salary (Annual)</label>
+                                <label htmlFor="salary">Salary (₹ Annual) </label>
                                 <input
-                                    type="text"
+                                    type="number"
                                     id="salary"
                                     name="salary"
                                     value={formData.salary}
@@ -209,14 +209,20 @@ const PostJobUi = () => {
                             </div>
                             <div className="form-section">
                                 <label htmlFor="experience">Experience</label>
-                                <input
+                                <select
                                     type="text"
                                     id="experience"
                                     name="experience"
                                     value={formData.experience}
                                     onChange={handleChange}
                                     required
-                                />
+                                >
+                                    <option value="">Select Experience</option>
+                                    <option value="Fresher">Fresher</option>
+                                    <option value="0-2 years">0-2 years</option>
+                                    <option value="3+ years">3+ years</option>
+
+                                </select>
                             </div>
                             <div className="form-section">
                                 <label htmlFor="location">Location</label>

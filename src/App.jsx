@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import AuthProvider, { AuthContext } from './context/AuthProvider.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AuthProvider, { AuthContext } from './context/AuthProvider.jsx';
 import Navbar from './actual-UI/Navbar.jsx';
 import Footer from './actual-UI/Footer.jsx';
 import Landing from './actual-UI/Landing.jsx';
@@ -16,7 +16,8 @@ import RecruiterDashboard from './recruiters-UI/RecruitersDashboard.jsx';
 import RecruiterNav from './recruiters-UI/recruiterNav.jsx';
 import ContactPage from './actual-UI/Contact.jsx';
 import AboutUs from './actual-UI/About.jsx';
-
+import FilterProvider from './context/FilterProvider.jsx';
+import ActiveProvider from './context/ActiveProvider.jsx';
 
 const DynamicComponent = ({ children }) => {
   const { userLoggedIn, authUser } = useContext(AuthContext);
@@ -31,45 +32,53 @@ const DynamicComponent = ({ children }) => {
         </>
       );
     }
-
     if (authUser.type === 'recruiter') {
       return (
         <>
-          <RecruiterNav />
-          {children || <RecruiterDashboard />}
-          <Footer />
+          <ActiveProvider>
+            <RecruiterNav />
+            {children || <RecruiterDashboard />}
+            <Footer />
+          </ActiveProvider>
         </>
       );
     }
-  } else {
-    return (
-      <>
-        <Navbar />
-        {children || <Landing />}
-        <Footer />
-      </>
-    );
   }
+
+  // Default to unauthenticated UI
+  return (
+    <>
+      <Navbar />
+      {children || <Landing />}
+      <Footer />
+    </>
+  );
 };
 
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/" element={<DynamicComponent />} />
+    <Route path="/job_search" element={<DynamicComponent><Job_Search /></DynamicComponent>} />
+    <Route path="/careers" element={<DynamicComponent><Careers /></DynamicComponent>} />
+    <Route path="/register" element={<Register />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/user/profile" element={<DynamicComponent><Profile /></DynamicComponent>} />
+    <Route path="/contact" element={<DynamicComponent><ContactPage /></DynamicComponent>} />
+    <Route path="/about" element={<DynamicComponent><AboutUs /></DynamicComponent>} />
+    <Route path="/example" element={<Example />} />
+  </Routes>
+);
 
 const App = () => {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<DynamicComponent />} />
-          <Route path="/job_search" element={<DynamicComponent > <Job_Search /> </DynamicComponent >} />
-          <Route path="/careers" element={<DynamicComponent > <Careers /> </DynamicComponent>} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/user/profile" element={<DynamicComponent><Profile /></DynamicComponent>} />
-          <Route path="/contact" element={<DynamicComponent ><ContactPage /></DynamicComponent>} />
-          <Route path="/about" element={<DynamicComponent><AboutUs /></DynamicComponent>} />
-          <Route path='/example' element={<Example />} />
-        </Routes>
-      </BrowserRouter>
-    </AuthProvider>
+
+    <FilterProvider>
+      <AuthProvider>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </AuthProvider>
+    </FilterProvider>
   );
 };
 

@@ -167,9 +167,15 @@
 @media (max-width: 768px) {
     .form-container {
         padding: 20px;
+        margin: 0;
     }
 
     .form-grid {
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px) {
+    .jobbers-section{
+        padding: 15px;
     }
 }

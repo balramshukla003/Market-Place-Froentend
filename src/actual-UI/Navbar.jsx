@@ -98,7 +98,7 @@ const Navbar = () => {
                     <h2>Market Place</h2>
                 </div>
 
-                <div className="nav-links">
+                <div className="nav-links-nav">
 
                     <Link
                         style={{ fontWeight: 'bold' }}
@@ -140,25 +140,13 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <button className="hamburger" onClick={toggleMenu} style={{ color: "black" }}>
-                    <span className="line"></span>
-                    <span className="line"></span>
-                    <span className="line"></span>
-                </button>
-            </div>
-
-            {menuVisible && (
-                <div className="responsiveMenu">
-                    <ul>
-                        <div className='nav-title'>
-                            <img src={image} alt="User" />
-                            <h3 onClick={() => {
-                                navigateTo();
-                            }}>Login</h3>
-                        </div>
-                    </ul>
+                <div className='nav-title' id='Responsive' onClick={() => {
+                    navigateTo();
+                }} style={{ cursor: 'pointer' }}>
+                    <img src={image} alt="Logo" /> Login
                 </div>
-            )}
+
+            </div>
 
             {dropDown && (
                 <div

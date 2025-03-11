@@ -24,6 +24,7 @@ import { HiRectangleStack } from "react-icons/hi2";
 import { SiLivechat } from "react-icons/si";
 import { MdOutlinePolicy, MdWork } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
+import { IoHomeOutline } from "react-icons/io5";
 
 import { AiOutlineFileDone } from "react-icons/ai";
 
@@ -68,6 +69,7 @@ const icons = {
   questionMark: RxQuestionMarkCircled,
   prefer: MdOutlineRoomPreferences,
   edit: CiEdit,
+  home: IoHomeOutline
 
 };
 
